@@ -1,13 +1,25 @@
-<img  id="pic" onclick="fun()" src="chicken.png" style="top:500; left:200; position:absolute">
+<img  id="chicken1" onclick="fun()" src="chicken.png" style="top:500; left:200; position:absolute">
+<img  id="chase1" onclick="fun()" src="chase.png" style="top:500; left:200; position:absolute">
+<img  id="marshall1" onclick="fun()" src="marshall.png" style="top:500; left:200; position:absolute">
+<img  id="rocky1" onclick="fun()" src="rocky.png" style="top:500; left:200; position:absolute">
+<img  id="rubble1" onclick="fun()" src="rubble.png" style="top:500; left:200; position:absolute">
+<img  id="skye1" onclick="fun()" src="skye.png" style="top:500; left:200; position:absolute">
+<img  id="zuma1" onclick="fun()" src="zuma.png" style="top:500; left:200; position:absolute">
 
-<audio id="chi" onplay="move()" src="chicken.wav">
-
+<audio id="chicken2" onplay="move()" src="chicken.wav">
+<audio id="chase2" onplay="move()" src="chase.mp3">
+<audio id="marshall2" onplay="move()" src="marshall.mp3">
+<audio id="rocky2" onplay="move()" src="rocky.mp3">
+<audio id="rubble2" onplay="move()" src="rubble.mp3">
+<audio id="skye2" onplay="move()" src="skye.mp3">
+<audio id="zuma2" onplay="move()" src="zuma.mp3">
+  
 <script>
-pic = document.getElementById("pic");
-chi = document.getElementById("chi");
-function fun() {chi.play();}
+chicken1 = document.getElementById("chicken1");
+chicken2 = document.getElementById("chicken2");
+function fun() {chicken2.play();}
 function timeout() {setTimeout(move, 150);}
 function move() {
-pic.style.top = 900 + -1*parseInt(pic.style.top);
-if (!chi.paused) {timeout();}}
+chicken1.style.top = 900 + -1*parseInt(chicken1.style.top);
+if (!chicken2.paused) {timeout();}}
 </script>
