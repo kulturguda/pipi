@@ -21,6 +21,7 @@ function chicken00() {setTimeout(chicken02, 150);}
 function chicken01() {chicken2.play();}
 function chicken02() {
 chicken1.style.top = chicken1.style.top + -100*parseInt(chicken1.style.top);
+    console.log(parseInt(chicken1.style.top));
 if (!chicken2.paused) {chicken00();}}
 
 chase1 = document.getElementById("chase1");
