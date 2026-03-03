@@ -20,7 +20,7 @@ chase2 = document.getElementById("chase2");
 function chase00() {setTimeout(chase02, 150);}
 function chase01() {chase2.play();}
 function chase02() {
-chase1.style.top = -50 + -1*parseInt(chase1.style.top);
+chase1.style.top = 50 + -1*parseInt(chase1.style.top);
 if (!chase2.paused) {chase00();}}
 
 marshall1 = document.getElementById("marshall1");
@@ -28,7 +28,7 @@ marshall2 = document.getElementById("marshall2");
 function marshall00() {setTimeout(marshall02, 150);}
 function marshall01() {marshall2.play();}
 function marshall02() {
-marshall1.style.top = -50 + -1*parseInt(marshall1.style.top);
+marshall1.style.top = 50 + -1*parseInt(marshall1.style.top);
 if (!marshall2.paused) {marshall00();}}
 
 rocky1 = document.getElementById("rocky1");
@@ -68,6 +68,6 @@ chicken2 = document.getElementById("chicken2");
 function chicken00() {setTimeout(chicken02, 150);}
 function chicken01() {chicken2.play();}
 function chicken02() {
-chicken1.style.bottom = 50 + -1*parseInt(chicken1.style.bottom);
+chicken1.style.bottom = -50 + -1*parseInt(chicken1.style.bottom);
 if (!chicken2.paused) {chicken00();}}
 </script>
