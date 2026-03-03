@@ -1,4 +1,4 @@
-<img  id="chicken1" onclick="fun()" src="chicken.png" style="top:500; left:200; position:absolute">
+<img  id="chicken1" onclick="chicken1()" src="chicken.png" style="top:500; left:200; position:absolute">
 <img  id="chase1" onclick="fun()" src="chase.png" style="top:500; left:200; position:absolute">
 <img  id="marshall1" onclick="fun()" src="marshall.png" style="top:500; left:200; position:absolute">
 <img  id="rocky1" onclick="fun()" src="rocky.png" style="top:500; left:200; position:absolute">
@@ -6,7 +6,7 @@
 <img  id="skye1" onclick="fun()" src="skye.png" style="top:500; left:200; position:absolute">
 <img  id="zuma1" onclick="fun()" src="zuma.png" style="top:500; left:200; position:absolute">
 
-<audio id="chicken2" onplay="move()" src="chicken.wav">
+<audio id="chicken2" onplay="chicken2()" src="chicken.wav">
 <audio id="chase2" onplay="move()" src="chase.mp3">
 <audio id="marshall2" onplay="move()" src="marshall.mp3">
 <audio id="rocky2" onplay="move()" src="rocky.mp3">
@@ -17,9 +17,9 @@
 <script>
 chicken1 = document.getElementById("chicken1");
 chicken2 = document.getElementById("chicken2");
-function fun() {chicken2.play();}
-function timeout() {setTimeout(move, 150);}
-function move() {
+function chicken1() {chicken2.play();}
+function chicken3() {setTimeout(chicken2, 150);}
+function chicken2() {
 chicken1.style.top = 900 + -1*parseInt(chicken1.style.top);
-if (!chicken2.paused) {timeout();}}
+if (!chicken2.paused) {chicken3();}}
 </script>
