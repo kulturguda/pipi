@@ -1,0 +1,13 @@
+<img  id="pic" onclick="fun()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Chicken_cartoon_04.svg/542px-Chicken_cartoon_04.svg.png" style="top:500; left:200; position:absolute">
+
+<audio id="chi" onplay="move()" src="https://github.com/budjb/jaymod/raw/master/pak/sound/jaymod/chicken.wav">
+
+<script>
+pic = document.getElementById("pic");
+chi = document.getElementById("chi");
+function fun() {chi.play();}
+function timeout() {setTimeout(move, 150);}
+function move() {
+pic.style.top = 900 + -1*parseInt(pic.style.top);
+if (!chi.paused) {timeout();}}
+</script>
