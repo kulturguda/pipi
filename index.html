@@ -20,7 +20,7 @@ chicken2 = document.getElementById("chicken2");
 function chicken00() {setTimeout(chicken02, 150);}
 function chicken01() {chicken2.play();}
 function chicken02() {
-  aaa=-100*parseInt(chicken1.style.top);
+  aaa=-1*parseInt(chicken1.style.top);
 chicken1.style.top = 1 + aaa;
     console.log(aaa);
 if (!chicken2.paused) {chicken00();}}
