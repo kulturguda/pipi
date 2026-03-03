@@ -1,10 +1,10 @@
-<img  id="chase1" onclick="chase01()" src="chase.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="marshall1" onclick="marshall01()" src="marshall.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="rocky1" onclick="rocky01()" src="rocky.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="rubble1" onclick="rubble01()" src="rubble.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="skye1" onclick="skye01()" src="skye.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="zuma1" onclick="zuma01()" src="zuma.png" style="height:400px; translate:-50%; top:1; left:1; position:relative">
-<img  id="chicken1" onclick="chicken01()" src="chicken.png" style="height:400px; translate:-50%; bottom:10%; left:50%; position:absolute">
+<img  id="chase1" onclick="chase01()" src="chase.png" style="height:400px; translate:-50%; top:1; left:25%; position:absolute">
+<img  id="marshall1" onclick="marshall01()" src="marshall.png" style="height:400px; translate:-50%; top:1; left:75%; position:absolute">
+<img  id="rocky1" onclick="rocky01()" src="rocky.png" style="height:400px; translate:-50%; top:1; left:25%; position:absolute">
+<img  id="rubble1" onclick="rubble01()" src="rubble.png" style="height:400px; translate:-50%; top:1; left:75%; position:absolute">
+<img  id="skye1" onclick="skye01()" src="skye.png" style="height:400px; translate:-50%; top:1; left:25%; position:absolute">
+<img  id="zuma1" onclick="zuma01()" src="zuma.png" style="height:400px; translate:-50%; top:1; left:75%; position:absolute">
+<img  id="chicken1" onclick="chicken01()" src="chicken.png" style="height:400px; translate:-50%; bottom:0; left:50%; position:absolute">
 
 <audio id="chase2" onplay="chase02()" src="chase.mp3">
 <audio id="marshall2" onplay="marshall02()" src="marshall.mp3">
@@ -15,14 +15,6 @@
 <audio id="chicken2" onplay="chicken02()" src="chicken.wav">
 
 <script>
-chicken1 = document.getElementById("chicken1");
-chicken2 = document.getElementById("chicken2");
-function chicken00() {setTimeout(chicken02, 150);}
-function chicken01() {chicken2.play();}
-function chicken02() {
-chicken1.style.top = 50 + -1*parseInt(chicken1.style.top);
-if (!chicken2.paused) {chicken00();}}
-
 chase1 = document.getElementById("chase1");
 chase2 = document.getElementById("chase2");
 function chase00() {setTimeout(chase02, 150);}
@@ -70,4 +62,12 @@ function zuma01() {zuma2.play();}
 function zuma02() {
 zuma1.style.top = 50 + -1*parseInt(zuma1.style.top);
 if (!zuma2.paused) {zuma00();}}
+
+chicken1 = document.getElementById("chicken1");
+chicken2 = document.getElementById("chicken2");
+function chicken00() {setTimeout(chicken02, 150);}
+function chicken01() {chicken2.play();}
+function chicken02() {
+chicken1.style.top = 50 + -1*parseInt(chicken1.style.top);
+if (!chicken2.paused) {chicken00();}}
 </script>
