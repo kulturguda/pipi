@@ -1,15 +1,15 @@
-<img  id="chicken1" onclick="chicken1()" src="chicken.png" style="top:500; left:200; position:absolute">
+<img  id="chicken1" onclick="chicken01()" src="chicken.png" style="top:500; left:200; position:absolute">
 
 
-<audio id="chicken2" onplay="chicken2()" src="chicken.wav">
+<audio id="chicken2" onplay="chicken02()" src="chicken.wav">
 
   
 <script>
 chicken1 = document.getElementById("chicken1");
 chicken2 = document.getElementById("chicken2");
-function chicken0() {setTimeout(chicken2, 150);}
-function chicken1() {chicken2.play();}
-function chicken2() {
+function chicken00() {setTimeout(chicken2, 150);}
+function chicken01() {chicken2.play();}
+function chicken02() {
 chicken1.style.top = 900 + -1*parseInt(chicken1.style.top);
-if (!chicken2.paused) {chicken0();}}
+if (!chicken2.paused) {chicken00();}}
 </script>
